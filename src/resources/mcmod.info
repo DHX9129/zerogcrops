@@ -1,0 +1,16 @@
+[
+{
+  "modid": "zerogcrops",
+  "name": "Zero G Crops",
+  "description": "A Mod in development",
+  "version": "Alpha1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DHX"],
+  "credits": "Thanks to Pahimar for getting me started.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

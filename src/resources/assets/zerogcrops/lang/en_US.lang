@@ -1,0 +1,12 @@
+#Creative Tabs
+itemGroup.zerogcrops=Zero G Crops
+#Items
+item.zerogcrops:zghoe.name="Zero-G" Hoe
+item.zerogcrops:zgseeds.name=Seeds
+#Blocks
+tile.zerogcrops:blockzgwater.name=Water
+tile.zerogcrops:blockzgfarmland.name=Farmland
+#Keys
+keys.zerogcrops.category=Zero G Crops
+keys.zerogcrops.charge=Charge
+keys.zerogcrops.release=Release
