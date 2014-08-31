@@ -6,6 +6,7 @@ import com.DHX.zerogcrops.init.ModBlocks;
 import com.DHX.zerogcrops.init.ModItems;
 import com.DHX.zerogcrops.init.Recipes;
 import com.DHX.zerogcrops.reference.Reference;
+import com.DHX.zerogcrops.renderers.ModRenderers;
 import com.DHX.zerogcrops.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -35,6 +36,8 @@ public class zerogcrops
         ModItems.init();
         ModBlocks.init();
 
+        //renderers
+        ModRenderers.registerAll();
         LogHelper.info("Pre-Initialization Complete");
       }
 

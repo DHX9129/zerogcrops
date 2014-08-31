@@ -7,4 +7,13 @@ public class ServerProxy extends CommonProxy
       {
         //NOP
       }
+    @Override
+    public int getRenderType(){return 0;}
+
+      @Override
+      public void registerRenderers()
+      {
+        //NOP
+      }
+
   }

@@ -1,6 +1,8 @@
 package com.DHX.zerogcrops.block;
 import com.DHX.zerogcrops.init.ModBlocks;
 import com.DHX.zerogcrops.init.ModItems;
+import com.DHX.zerogcrops.renderers.ModRenderers;
+import com.DHX.zerogcrops.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import java.util.ArrayList;
@@ -40,15 +42,12 @@ public class BlockZGCrops extends BlockZGBush implements IGrowable
       {
         return hostblock == ModBlocks.blockZGFarmland;
       }
-
     /**
      * Ticks the block if it's been scheduled
      */
     @Override
     public void updateTick(World world, int x, int y, int z, Random random)
       {
-        super.updateTick(world, x, y, z, random);
-
         if (world.getBlockLightValue(x, y - 1, z) >= 9)
           {
             int l = world.getBlockMetadata(x, y, z);
@@ -148,9 +147,9 @@ public class BlockZGCrops extends BlockZGBush implements IGrowable
      */
     @Override
     public int getRenderType()
-      {
-        return 6;
-      }
+    {
+        return ModRenderers.rendererCrop;
+    }
 
 
     protected Item seeditem()
@@ -215,7 +214,6 @@ public class BlockZGCrops extends BlockZGBush implements IGrowable
     public void registerBlockIcons(IIconRegister iconregister)
       {
         this.iconarray = new IIcon[8];
-
         for (int i = 0; i < this.iconarray.length; ++i)
           {
             this.iconarray[i] = iconregister.registerIcon("minecraft:" + this.getTextureName() + "_stage_" + i);
