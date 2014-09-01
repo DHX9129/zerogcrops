@@ -23,7 +23,6 @@ public class BlockZGC extends Block
     public BlockZGC(Material material)
       {
         super(material);
-        this.setCreativeTab(CreativeTabZGC.ZGC_Tab);
       }
 
     public BlockZGC()

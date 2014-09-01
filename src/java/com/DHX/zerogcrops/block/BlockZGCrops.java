@@ -2,7 +2,6 @@ package com.DHX.zerogcrops.block;
 import com.DHX.zerogcrops.init.ModBlocks;
 import com.DHX.zerogcrops.init.ModItems;
 import com.DHX.zerogcrops.renderers.ModRenderers;
-import com.DHX.zerogcrops.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import java.util.ArrayList;
@@ -100,11 +99,11 @@ public class BlockZGCrops extends BlockZGBush implements IGrowable
               {
                 float f1 = 0.0F;
 
-                if (world.getBlock(l, y + 1, i1).canSustainPlant(world, l, y + 1, i1, ForgeDirection.DOWN, this))
+                if (world.getBlock(l, y - 1, i1).canSustainPlant(world, l, y - 1, i1, ForgeDirection.DOWN, this))
                   {
                     f1 = 1.0F;
 
-                    if (world.getBlock(l, y + 1, i1).isFertile(world, l, y + 1, i1))
+                    if (world.getBlock(l, y - 1, i1).isFertile(world, l, y - 1, i1))
                       {
                         f1 = 3.0F;
                       }
@@ -132,14 +131,14 @@ public class BlockZGCrops extends BlockZGBush implements IGrowable
      */
     @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int p_149691_1_, int p_149691_2_)
+    public IIcon getIcon(int side, int meta)
       {
-        if (p_149691_2_ < 0 || p_149691_2_ > 7)
+        if (meta < 0 || meta > 7)
           {
-            p_149691_2_ = 7;
+            meta = 7;
           }
 
-        return this.iconarray[p_149691_2_];
+        return this.iconarray[meta];
       }
 
     /**

@@ -3,9 +3,14 @@ itemGroup.zerogcrops=Zero G Crops
 #Items
 item.zerogcrops:zghoe.name="Zero-G" Hoe
 item.zerogcrops:zgseeds.name=Seeds
+item.zerogcrops:carrot.name=Carrot
+item.zerogcrops:potato.name=Potato
 #Blocks
 tile.zerogcrops:blockzgwater.name=Water
 tile.zerogcrops:blockzgfarmland.name=Farmland
+tile.zerogcrops:crops.name=Wheat
+tile.zerogcrops:blockzgcarrot.name=Carrots
+tile.zerogcrops:blockzgpotato.name=Potatoes
 #Keys
 keys.zerogcrops.category=Zero G Crops
 keys.zerogcrops.charge=Charge

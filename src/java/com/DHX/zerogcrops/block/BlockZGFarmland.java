@@ -32,7 +32,6 @@ public class BlockZGFarmland extends BlockZGC
         this.setTickRandomly(true);
         this.setBlockBounds(0.0F, 0.0625F, 0.0F, 1.0F, 1.0F, 1.0F);
         this.setLightOpacity(255);
-        this.setCreativeTab(CreativeTabZGC.ZGC_Tab);
         this.setHardness(0.6F);
         this.setStepSound(Block.soundTypeGravel);
         this.setBlockTextureName("farmland");

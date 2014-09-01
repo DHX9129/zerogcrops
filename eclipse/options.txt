@@ -11,7 +11,7 @@ anaglyph3d:false
 advancedOpengl:true
 maxFps:60
 fboEnable:true
-difficulty:0
+difficulty:3
 fancyGraphics:true
 ao:2
 clouds:true
@@ -87,6 +87,11 @@ key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_keys.zerogcrops.charge:46
 key_keys.zerogcrops.release:19
+key_waila.keybind.wailaconfig:82
+key_waila.keybind.wailadisplay:79
+key_waila.keybind.liquid:80
+key_waila.keybind.recipe:81
+key_waila.keybind.usage:75
 soundCategory_master:0.13907285
 soundCategory_music:0.056338027
 soundCategory_record:0.47887325

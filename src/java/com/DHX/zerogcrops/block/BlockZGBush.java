@@ -2,6 +2,7 @@ package com.DHX.zerogcrops.block;
 
 import java.util.Random;
 import com.DHX.zerogcrops.creativetab.CreativeTabZGC;
+import com.DHX.zerogcrops.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -21,7 +22,6 @@ public class BlockZGBush extends BlockZGC implements IPlantable
         this.setTickRandomly(true);
         float f = 0.2F;
         this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, f * 3.0F, 0.5F + f);
-        this.setCreativeTab(CreativeTabZGC.ZGC_Tab);
       }
 
     protected BlockZGBush()
@@ -43,7 +43,7 @@ public class BlockZGBush extends BlockZGC implements IPlantable
      */
     protected boolean canPlaceBlockOn(Block hostblock)
       {
-        return hostblock == Blocks.grass || hostblock == Blocks.dirt || hostblock == Blocks.farmland;
+        return hostblock == Blocks.grass || hostblock == Blocks.dirt || hostblock == ModBlocks.blockZGFarmland;
       }
 
     /**
@@ -127,8 +127,8 @@ public class BlockZGBush extends BlockZGC implements IPlantable
     @Override
     public EnumPlantType getPlantType(IBlockAccess world, int x, int y, int z)
       {
-        if (this == Blocks.wheat)          return Crop;
-        if (this == Blocks.carrots)        return Crop;
+        if (this == ModBlocks.blockZGWheat)          return Crop;
+        if (this == ModBlocks.blockZGCarrot)        return Crop;
         if (this == Blocks.potatoes)       return Crop;
         if (this == Blocks.melon_stem)     return Crop;
         if (this == Blocks.pumpkin_stem)   return Crop;
